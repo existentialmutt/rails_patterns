@@ -1,0 +1,7 @@
+%h1 Edit User Profile
+
+= simple_form_for @user_profile do |form|
+  = form.input :full_name
+  = form.input :bio, as: :text
+
+  = form.submit "Save"

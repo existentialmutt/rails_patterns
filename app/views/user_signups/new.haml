@@ -1,0 +1,11 @@
+%h1 Sign Up!
+
+= simple_form_for @user_signup do |form|
+  = form.input :email
+
+  %h3 Terms of Service
+  %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi error laudantium delectus autem accusamus, impedit neque excepturi ad, est quisquam illo and I'll make Rafe pancakes every Tuesday, mollitia vitae non maiores officiis?
+
+  = form.input :accepts_terms_of_service, label: "I accept", as: :boolean
+
+  = form.submit "Sign Up!"
